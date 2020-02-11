@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Nathan Deering - Portfolio</title>
+	<link rel="shortcut icon" href="img/imgonline-com-ua-resize-CHkwub7L3v (1).png">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- Style.css -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Plugins.css -->
+	<link rel="stylesheet" href="css/plugins.css">
+	<!-- Google Fonts https://fonts.google.com/ -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<!-- CODE FORMATTING!-->
+	<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=python&amp;skin=sons-of-obsidian"></script>
+</head>
+
+<body data-spy="scroll" data-target="#navbarResponsive">
+
+	<!-- Start Home Section -->
+	<div id="home">
+
+		<!-- Navigation -->
+		<nav class="navbar navbar-expand-lg fixed-top">
+			<div class="container-fluid">
+				<a href="index.html" class="navbar-brand"><img src="img/imgonline-com-ua-resize-pBdqznRlT7.png" style="text-decoration: none" alt=""></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+					<span class="custom-toggler-icon"><i class="fas fa-bars"></i></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a href="index.html" class="nav-link">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="#home" class="nav-link">Project Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="#background" class="nav-link">Objective</a>
+						</li>
+						<li class="nav-item">
+							<a href="#features" class="nav-link">Code</a>
+						</li>
+						<li class="nav-item">
+							<a href="#portfolio" class="nav-link">Portfolio</a>
+						</li>
+						<li class="nav-item">
+							<a href="#contact" class="nav-link">Contact</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</nav>
+		<!-- End Navigation -->
+
+		<!-- Start Landing Page Image -->
+		<div class="landing-mars">
+			<div class="home-wrap-mars">
+				<div class="home-inner-mars"></div>
+			</div>
+		</div>
+		<!-- End Landing Page Image -->
+
+		<!-- Start Landing Page Caption -->
+		<div class="caption text-center text-light text-uppercase">
+
+            <h1 class="font-weight-bold os-animation" data-animation="fadeInUp" data-delay=".6s">Mission to Mars</h1>
+            <h3 class="os-animation" data-animation="fadeInUp" data-delay=".8s">Web-scraping application that collects </br>data from NASA and other web sources</br> containing information and updates</br>on the exploration of Mars. </h3>
+			<div>
+				<a href="#background" class="btn btn-outline-light btn-lg rounded-0 os-animation" data-animation="fadeInUp" data-delay="1.2s">Get Started</a>
+			</div>
+
+		</div>
+		<!-- End Landing Page Caption -->
+
+		<!-- Start Bouncing Down Arrow -->
+		<a href="#background" class="down-arrow text-center">
+			<div class="arrow d-none d-md-block">
+				<i class="fas fa-angle-down"></i>
+			</div>
+		</a>
+		<!-- End Bouncing Down Arrow -->
+
+	</div>
+	<!-- End Home Section -->
+
+
+	<!-- Start Features Section -->
+	<div id="background" class="offset">
+		<!-- Start Theme Heading -->
+		<div class="row text-center py-4 os-animation justify-content-center" data-animation="fadeInUp" >
+			<div class="col-11 col-md-10 col-lg-9">
+				<h1>Objective</h1>
+				<p class="lead">Build a web application that scrapes various websites for data related to the Mission to Mars and exports the data to a Mongo database. Complete initial scraping using Jupyter Notebook, Python, BeautifulSoup, Pandas, and Requests/Splinter. Sources of scraping include <a href='https://mars.nasa.gov/news/?page=0&per_page=40&order=publish_date+desc%2Ccreated_at+desc&search=&category=19%2C165%2C184%2C204&blank_scope=Latest' target="_blank">Nasa's Mars Exploration Program</a>, <a href='https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars' target="_blank">Nasa's Jet Propulsion Laboratory</a>, <a href='https://twitter.com/marswxreport?lang=en' target="_blank">Mars Weather's Twitter page</a> and the <a href='https://space-facts.com/mars' target="_blank">Space Facts website</a>. Once Scraped, use MongoDB with Flask templating to create a new HTML page that displays all of the information that was scraped from the URLs above (This step is not yet complete and will be coming soon).</p>	
+			</div>
+		</div>
+	</div>
+        <!-- End Theme Heading -->
+    
+    		<!-- Start Featured Projects -->
+
+	<div id="features" class="offset">
+        <div class="fixed">
+            <div class="row dark text-center py-4 os-animation justify-content-center">			
+                <div class="col-11 col-md-10 col-lg-9" data-animation="fadeInUp">
+                    <h3 class="heading-mars">Code</h3>
+                    <div class="heading-underline"></div>
+                </div>
+            </div> <!-- End Row Dark -->
+            <div class="fixed-wrap">
+                <div class="fixed-dark"></div>
+            </div>
+        </div>
+        <!-- End Fixed BG IMG Dark -->
+    </div>
+    <!-- End of Features Section -->
+
+
+
+    <div id="background" class="offset">
+            <!-- Start Theme Heading -->
+        <div class="row text-center py-4 os-animation justify-content-center" data-animation="fadeInUp">
+            <div class="col-11 col-md-10 col-lg-9">
+				<p class="lead">First, import the dependencies and make a connection to a Mongo database. Next, grab the URL of the page that is going to be scraped and make a connection. You should see 'Response [200]' in the output if the connection is succesful. 
+				</p>
+				<figure class="code-format">
+					<?prettify linenums=1?>
+					<pre class="prettyprint">
+# Dependencies
+from bs4 import BeautifulSoup
+from splinter import Browser
+import requests
+import pymongo
+import pandas as pd
+
+# Initialize PyMongo to work with MongoDBs
+conn = 'mongodb://localhost:27017'
+client = pymongo.MongoClient(conn)
+
+# Define database and collection
+db = client.mission_to_mars
+collection = db.items
+
+# URL of page to be scraped
+url = 'https://mars.nasa.gov/news/?page=0&per_page=40&order=publish_date+desc%2Ccreated_at+desc&search=&category=19%2C165%2C184%2C204&blank_scope=Latest'
+
+# Retrieve page with the requests module
+response = requests.get(url)
+# Create BeautifulSoup object; parse with 'lxml'
+response</pre>
+				<p>OUTPUT:<br />Response[200]</p>
+				  </figure>
+				  <p class="lead">After making a connection to the page, use BeautifulSoup to get the web page HTML. Next, use soup.prettify() to view how the different tags are nested, making it easier to find the elements for scraping. 
+				  </p>	
+				  <figure class="code-format">
+					<?prettify linenums=23?>
+					<pre class="prettyprint">
+# Page HTML Code
+soup = BeautifulSoup(response.text, 'html.parser')
+print(soup.prettify())</pre>
+<p>OUTPUT:<br />HTML from webpage outputs here, for full code please see the Jupyter Notebook in GitHub.</p>
+				  </figure>
+				  <p class="lead">Next, find all div elements assigned the class 'slide'. Iterate through the 'results' and find the titles and descriptions of the articles on the page.
+					</p>	
+					<figure class="code-format">
+					  <?prettify linenums=26?>
+					  <pre class="prettyprint">
+# Examine the results, then determine element that contains sought info
+# results are returned as an iterable list
+results = soup.find_all('div', class_='slide')
+
+# Loop through returned results
+for result in results:
+# Error handling
+	try:
+		# Identify and return title of article
+		title = result.find('div', class_='content_title').find('a').text
+		description = result.find('div', class_='image_and_description_container').find('a').find('div', class_='rollover_description').find('div', class_='rollover_description_inner').text
+
+		# Run only if title is available
+		if (title):
+			# Print results
+			print('-------------')
+			print(title)
+			print(description)
+
+			# Dictionary to be inserted as a MongoDB document
+			articles = {
+				'title': title,
+				'description': description
+			}
+			
+			collection.insert_one(articles)
+	except Exception as e:
+		print(e)</pre>
+  <p> OUTPUT:<br />
+
+	  -------------<br />
+
+		NASA Invites Students to Name Mars 2020 Rover<br />
+		
+		
+		Through Nov. 1, K-12 students in the U.S. are encouraged to enter an essay contest to name NASA's next Mars rover.<br />
+		
+		-------------<br />
+		
+		NASA's Curiosity Mars Rover Finds a Clay Cache<br />
+		
+		
+		The rover recently drilled two samples, and both showed the highest levels of clay ever found during the mission.<br />
+		
+		-------------<br />
+		
+		Why This Martian Full Moon Looks Like Candy<br />
+		
+		
+		For the first time, NASA's Mars Odyssey orbiter has caught the Martian moon Phobos during a full moon phase. Each color in this new image represents a temperature range detected by Odyssey's infrared camera.<br />
+		
+		-------------<br />
+		
+		NASA Garners 7 Webby Award Nominations<br />
+		
+		
+		Nominees include four JPL projects: the solar system and climate websites, InSight social media, and a 360-degree Earth video. Public voting closes April 18, 2019.<br />
+		
+		-------------<br />
+		
+		NASA's Opportunity Rover Mission on Mars Comes to End<br />
+		
+		
+		NASA's Opportunity Mars rover mission is complete after 15 years on Mars. Opportunity's record-breaking exploration laid the groundwork for future missions to the Red Planet.<br />
+		
+		-------------<br />
+		
+		NASA's InSight Places First Instrument on Mars<br />
+		
+		
+		In deploying its first instrument onto the surface of Mars, the lander completes a major mission milestone.</p>
+					</figure>
+					<p class="lead">The first URL is scraped and added to the Mongo database! Next, make a connection with the next web page and print out the HTML of the page.
+						</p>
+						<figure class="code-format">
+							<?prettify linenums=54?>
+							<pre class="prettyprint">
+executable_path = {'executable_path': 'chromedriver.exe'}
+browser = Browser('chrome', **executable_path, headless=False)
+
+url = 'https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars'
+browser.visit(url)
+
+html = browser.html
+soup = BeautifulSoup(html, 'html.parser')
+print(soup.prettify())</pre>
+						<p>OUTPUT:<br />HTML from webpage outputs here, for full code please see the Jupyter Notebook in GitHub.</p>
+						  </figure>
+						<p class="lead">After making a connection to the URL and getting the HTML code, find the elements linked to the feature image, output it's URL and add it to the MongoDB.
+						</p>
+						<figure class="code-format">
+							<?prettify linenums=63?>
+							<pre class="prettyprint">
+#find feature image
+import cssutils
+div_style = soup.find('article')['style']
+style = cssutils.parseStyle(div_style)
+url = style['background-image']
+
+#remove characters from the url
+url1 = url.strip('url')
+url2 = url1.strip('(')
+url3 = url2.strip(')')
+
+jpg_link = {
+				'jpg': url3
+			}
+collection.insert_one(jpg_link)
+
+#print above url with the following string below to return the full image
+print('https://www.jpl.nasa.gov'+url3)</pre>
+						<p>OUTPUT:<br />
+							https://www.jpl.nasa.gov/spaceimages/images/wallpaper/PIA00069-1920x1200.jpg</p>
+							</figure>
+						<p class="lead">The second URL is scraped and added to the Mongo database! Next, make a connection with the next web page and print out the HTML of the page.
+						</p>
+						<figure class="code-format">
+							<?prettify linenums=81?>
+							<pre class="prettyprint">executable_path = {'executable_path': 'chromedriver.exe'}
+url = 'https://twitter.com/marswxreport?lang=en'
+response = requests.get(url)
+
+soup = BeautifulSoup(response.text, 'html.parser')
+print(soup.prettify())</pre>
+						<p>OUTPUT:<br />HTML from webpage outputs here, for full code please see the Jupyter Notebook in GitHub.</p>
+						</figure>
+						<p class="lead">After making a connection to the URL and getting the HTML code, find the elements that are linked to the Tweets that specifically detail the weather on Mars. Find the most recent Tweet that gives an update of the weather on Mars(Hint: all Tweets that give updates of the weather on Mars start with 'Insight Sol'). Any Tweet that did not start with the string 'Insight Sol' was skipped. Once the Mars weather Tweets are scraped, print out the first Tweet in the list.
+						</p>
+						<figure class="code-format">
+							<?prettify linenums=87?>
+							<pre class="prettyprint">
+results = soup.find_all('li', class_='js-stream-item stream-item stream-item')
+tweets = []
+
+#Identify and return tweets, store tweets into a list
+for result in results:
+	
+	tweet = result.find('p', class_='tweet-text').text
+	tweets.append(tweet)
+
+#loop through list of tweets and find the first tweet that gives an update on the weather
+for content in tweets:
+	if content.startswith('InSight sol') == False:
+		'0'
+	else:
+		print(content)
+		break
+mars_weather = {
+				'tweet': content
+			}
+collection.insert_one(mars_weather)</pre>
+						<p>OUTPUT:<br />InSight sol 265 (2019-08-25) low -99.4ºC (-146.9ºF) high -26.3ºC (-15.3ºF)
+							winds from the SSE at 5.3 m/s (12.0 mph) gusting to 16.1 m/s (35.9 mph)
+							pressure at 7.50 hPapic.twitter.com/9YLawm67zS</p>
+						</figure>
+						<p class="lead">The Tweet was found an added to the MongoDB! Finally, make a connection to the final URL and get the HTML code.
+						</p>
+						<figure class="code-format">
+							<?prettify linenums=107?>
+							<pre class="prettyprint">
+executable_path = {'executable_path': 'chromedriver.exe'}
+url = 'https://space-facts.com/mars/'
+response = requests.get(url)
+
+soup = BeautifulSoup(response.text, 'html.parser')
+print(soup.prettify())</pre>
+						<p>OUTPUT:<br />HTML from webpage outputs here, for full code please see the Jupyter Notebook in GitHub.</p>
+						</figure>
+						<p class="lead">Once a connection is made, find the table that holds the attributes of Mars. Output the table to a dataframe and add to the Mongo database.
+						</p>
+						<figure class="code-format">
+							<?prettify linenums=113?>
+							<pre class="prettyprint">
+results = soup.find('tbody')
+
+labels = []
+data = []
+
+#loop through data in the the table and append results
+for result in results:
+	
+	column_1 = result.find('td', class_='column-1').text
+	labels.append(column_1)
+for result in results:
+	
+	column_2 = result.find('td', class_='column-2').text
+	data.append(column_2)
+
+mars_table = {
+				'labels': labels,
+				'data': data
+			}
+collection.insert_one(mars_table)
+table_df = pd.DataFrame(list(zip(labels, data)), columns =['Measurement', 'Result']) 
+table_df</pre>
+						<p>OUTPUT:<br />	
+							<table border="1" class="dataframe">  <thead>    <tr style="text-align: right;">      <th></th>      <th>Measurement</th>     <th>Result</th>    </tr>  </thead>  <tbody>    <tr>      <th>0</th>      <td>Diameter:</td>      <td>6,779 km</td>    </tr>    <tr>      <th>1</th>      <td>Mass:</td>      <td>6.39 × 10^23 kg</td>    </tr>    <tr>      <th>2</th>      <td>Moons:</td>      <td>2</td>    </tr>    <tr>      <th>3</th>      <td>Distance from Sun:</td>      <td>227,943,824 km</td>    </tr>    <tr>      <th>4</th>      <td>Length of Year:</td>      <td>687 Earth days</td>    </tr>    <tr>      <th>5</th>      <td>Temperature:</td>      <td>-153 to 20 °C</td>    </tr>  </tbody></table>
+							</p>
+						</figure>
+						<p class="lead">Convert the dataframe above to HTML.
+							</p>
+							<figure class="code-format">
+								<?prettify linenums=140?>
+								<pre class="prettyprint">
+#convert df table to html
+table_df = table_df.to_html()
+table_df.replace('\n', '')
+
+table_df</pre>
+							<p>OUTPUT:<br />HTML from webpage outputs here, for full code please see the Jupyter Notebook in GitHub.</p>
+							</figure>
+							<p class="lead">Output all items scraped.
+							</p>
+							<figure class="code-format">
+								<?prettify linenums=135?>
+								<pre class="prettyprint">
+#items scraped
+listings = db.items.find()
+
+for listing in listings:
+	print(listing)</pre>
+							<p>OUTPUT:<br />{'_id': ObjectId('5d7c5d8868f37c5c7f557af5'), 'title': '\nNASA Invites Students to Name Mars 2020 Rover\n', 'description': "\nThrough Nov. 1, K-12 students in the U.S. are encouraged to enter an essay contest to name NASA's next Mars rover.\n"}
+								{'_id': ObjectId('5d7c5d8968f37c5c7f557af6'), 'title': "\nNASA's Curiosity Mars Rover Finds a Clay Cache\n", 'description': '\nThe rover recently drilled two samples, and both showed the highest levels of clay ever found during the mission.\n'}
+								{'_id': ObjectId('5d7c5d8968f37c5c7f557af7'), 'title': '\nWhy This Martian Full Moon Looks Like Candy\n', 'description': "\nFor the first time, NASA's Mars Odyssey orbiter has caught the Martian moon Phobos during a full moon phase. Each color in this new image represents a temperature range detected by Odyssey's infrared camera.\n"}
+								{'_id': ObjectId('5d7c5d8968f37c5c7f557af8'), 'title': '\nNASA Garners 7 Webby Award Nominations\n', 'description': '\nNominees include four JPL projects: the solar system and climate websites, InSight social media, and a 360-degree Earth video. Public voting closes April 18, 2019.\n'}
+								{'_id': ObjectId('5d7c5d8968f37c5c7f557af9'), 'title': "\nNASA's Opportunity Rover Mission on Mars Comes to End\n", 'description': "\nNASA's Opportunity Mars rover mission is complete after 15 years on Mars. Opportunity's record-breaking exploration laid the groundwork for future missions to the Red Planet.\n"}
+								{'_id': ObjectId('5d7c5d8968f37c5c7f557afa'), 'title': "\nNASA's InSight Places First Instrument on Mars\n", 'description': '\nIn deploying its first instrument onto the surface of Mars, the lander completes a major mission milestone.\n'}
+								{'_id': ObjectId('5d7c5d9268f37c5c7f557afb'), 'jpg': '/spaceimages/images/wallpaper/PIA00069-1920x1200.jpg'}
+								{'_id': ObjectId('5d7c5d9268f37c5c7f557afc'), 'tweet': 'InSight sol 265 (2019-08-25) low -99.4ºC (-146.9ºF) high -26.3ºC (-15.3ºF)\nwinds from the SSE at 5.3 m/s (12.0 mph) gusting to 16.1 m/s (35.9 mph)\npressure at 7.50 hPapic.twitter.com/9YLawm67zS'}
+								{'_id': ObjectId('5d7c5d9368f37c5c7f557afd'), 'labels': ['Diameter:', 'Mass:', 'Moons:', 'Distance from Sun:', 'Length of Year:', 'Temperature:'], 'data': ['6,779 km', '6.39 × 10^23 kg', '2', '227,943,824 km', '687 Earth days', '-153 to 20 °C']}
+								</p>
+							</figure>
+							
+
+            </div>
+        </div>
+    </div>
+		<!-- Start Featured Projects -->
+
+	<div id="features" class="offset">
+		<div class="fixed">
+			<div class="row dark text-light text-center">			
+				<div class="col-12 os-animation" data-animation="fadeInUp">
+					<h3 class="heading">Conclusion</h3>
+					<div class="heading-underline"></div>
+					<p class="lead">BeautfulSoup is a powerful tool to find information and data within HTML code that would take many hours to find. Finding the correct elements required quite a bit of problem solving and troubleshooting to make sure the functions within the program were scraping and collecting the correct pieces of data. The MongoDB that was created will eventually be implemented into a Flask app that loads the database into an HTML page, so stay tuned! Please visit the GitHub repository to explore the project and the raw code!</p>
+					<div class="col-10 col-lg-9 col-xl-8 text-center pt-5 os-animation" data-animation="fadeInUp">
+							<a href="https://github.com/nrdeering/Web-Scraping-Mission-to-Mars" class="btn btn-secondary btn-sm" target="_blank">Visit GitHub</a>
+						</div>
+				</div>
+			</div> <!-- End Row Dark -->
+		</div>
+		<!-- End Fixed BG IMG Dark -->
+	</div>
+	<!-- End of Features Section -->
+
+
+	<!-- Start Portfolio Section -->
+	<div id="portfolio" class="offset">
+
+		<div class="container-fluid px-0">
+			<div class="row justify-content-center py-5">
+
+				<div class="col-12 mt-5 os-animation" data-animation="fadeInUp">
+						<h3 class="heading">Project Portfolio</h3>
+						<div class="heading-underline"></div>
+					</div>
+
+					<div class="col-sm-6 col-md-3 p-0 os-animation" data-animation="bounceInLeft" data-delay=".2s">
+						<div class="portfolio-item overflow-hidden">
+							<a href="img/portfolio/12.jpg" data-lightbox="example-set" data-title="Mission to Mars">
+								<a href="mars.html"><img src="img/portfolio/12.jpg" alt="" class="example-image w-100"></a>
+							</a>
+						</div>
+					</div>
+	
+					<div class="col-sm-6 col-md-3 p-0 os-animation" data-animation="bounceInLeft">
+						<div class="portfolio-item overflow-hidden">
+							<a href="img/computers23.jpeg" data-lightbox="example-set" data-title="My Portfolio Image Description">
+								<a href="erd.html"><img src="img/computers23.jpeg" alt="" class="example-image w-100"></a>							
+							</a>
+						</div>
+					</div>
+	
+					<div class="col-sm-6 col-md-3 p-0 os-animation" data-animation="bounceInRight">
+						<div class="portfolio-item overflow-hidden">
+							<a href="img/portfolio/14.jpg" data-lightbox="example-set" data-title="My Portfolio Image Description">
+								<a href="https://github.com/nrdeering/Python-Matplotlib" target="_blank"><img src="img/portfolio/14.jpg" alt="" class="example-image w-100"></a>
+							</a>
+						</div>
+					</div>
+	
+					<div class="col-sm-6 col-md-3 p-0 os-animation" data-animation="bounceInRight" data-delay=".2s">
+						<div class="portfolio-item overflow-hidden">
+							<a href="img/portfolio/15.jpg" data-lightbox="example-set" data-title="My Portfolio Image Description">
+								<a href="citibike.html"><img src="img/portfolio/15.jpg" alt="" class="example-image w-100"></a>
+							</a>
+						</div>
+					</div>
+	
+					<div class="col-sm-6 col-md-3 p-0 os-animation" data-animation="bounceInLeft" data-delay=".2s">
+						<div class="portfolio-item overflow-hidden">
+							<a href="img/portfolio/16.jpg" data-lightbox="example-set" data-title="My Portfolio Image Description">
+								<a href="https://github.com/nrdeering/Visual-Basic-Stocks" target="_blank"><img src="img/portfolio/16.jpg" alt="" class="example-image w-100"></a>
+							</a>
+						</div>
+					</div>
+	
+					<div class="col-sm-6 col-md-3 p-0 os-animation" data-animation="bounceInLeft">
+						<div class="portfolio-item overflow-hidden">
+							<a href="img/portfolio/17.jpg" data-lightbox="example-set" data-title="My Portfolio Image Description">
+								<a href="https://github.com/nrdeering/Crime-Data" target="_blank"><img src="img/portfolio/17.jpg" alt="" class="example-image w-100"></a>
+							</a>
+						</div>
+					</div>
+	
+					<div class="col-sm-6 col-md-3 p-0 os-animation" data-animation="bounceInRight">
+						<div class="portfolio-item overflow-hidden">
+							<a href="img/portfolio/18.jpg" data-lightbox="example-set" data-title="My Portfolio Image Description">
+								<a href="https://github.com/nrdeering/ETL-Youtube" target="_blank"><img src="img/portfolio/18.jpg" alt="" class="example-image w-100"></a>
+							</a>
+						</div>
+					</div>
+	
+					<div class="col-sm-6 col-md-3 p-0 os-animation" data-animation="bounceInRight" data-delay=".2s">
+						<div class="portfolio-item overflow-hidden">
+							<a href="img/portfolio/19.jpg" data-lightbox="example-set" data-title="My Portfolio Image Description">
+								<a href="https://github.com/Alexis-Summey/Read_Between_the_Wines" target="_blank"><img src="img/portfolio/19.jpg" alt="" class="example-image w-100"></a>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-10 col-lg-9 col-xl-8 text-center pt-5 os-animation" data-animation="fadeInUp">
+						<p class="lead">To see more projects, please visit GitHub and browse the different repositories.</p>
+						<a href="https://github.com/nrdeering" class="btn btn-secondary btn-sm" target="_blank">Visit GitHub</a>
+					</div>
+
+			</div> <!-- End Row -->
+		</div> <!-- End Container -->
+
+	</div>
+	<!-- End of Portfolio Section -->
+
+	<!-- Start Contact Section -->
+	<div id="contact" class="offset">
+
+		<div class="container-fluid footer px-0">
+			<div class="row outer">
+
+				<div class="container">
+					<div class="row py-3">
+
+						<div class="col-md-5 px-0 pr-md-3">
+							<strong>Location</strong>
+							<p>Charlotte, NC</p>
+							<strong>Contact Information</strong>
+							<p>(704)608-9213<br>nrdeering@gmail.com</p>
+							<ul class="social pt-3">
+									<li><a href="https://www.linkedin.com/in/nrdeering/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+									<li><a href="https://github.com/nrdeering" target="_blank"><i class="fab fa-github"></i></a></li>
+							</ul>
+						</div> <!-- End Column -->
+					</div> <!-- End Row -->
+				</div> <!-- End Container -->
+			</div> <!-- End Row Outer -->
+		</div> <!-- End Container Fluid -->
+		
+	</div>
+	<!-- End Contact Section -->
+
+
+	<!-- Top Scroll -->
+	<a href="#home" class="top-scroll">
+		<i class="fa fa-angle-up"></i>
+	</a>
+	<!-- End of Top Scroll -->
+
+
+	<!-- Script Source Files -->
+
+
+	<!-- Plugins.js -->
+	<script src="js/plugins.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+	<script src="https://use.fontawesome.com/releases/v5.11.2/js/all.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+	
+	<!-- End of Script Source Files -->
+
+</body>
+</html>

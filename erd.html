@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Nathan Deering - Portfolio</title>
+	<link rel="shortcut icon" href="img/imgonline-com-ua-resize-CHkwub7L3v (1).png">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- Style.css -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Plugins.css -->
+	<link rel="stylesheet" href="css/plugins.css">
+	<!-- Google Fonts https://fonts.google.com/ -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<!-- CODE FORMATTING!-->
+	<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=SQL&amp;skin=default"></script>
+</head>
+
+<body data-spy="scroll" data-target="#navbarResponsive">
+
+	<!-- Start Home Section -->
+	<div id="home">
+
+		<!-- Navigation -->
+		<nav class="navbar navbar-expand-lg fixed-top">
+			<div class="container-fluid">
+				<a href="index.html" class="navbar-brand"><img src="img/imgonline-com-ua-resize-pBdqznRlT7.png" style="text-decoration: none" alt=""></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+					<span class="custom-toggler-icon"><i class="fas fa-bars"></i></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a href="index.html" class="nav-link">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="#home" class="nav-link">Project Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="#background" class="nav-link">Objective</a>
+						</li>
+						<li class="nav-item">
+							<a href="#features" class="nav-link">Code</a>
+						</li>
+						<li class="nav-item">
+							<a href="#portfolio" class="nav-link">Portfolio</a>
+						</li>
+						<li class="nav-item">
+							<a href="#contact" class="nav-link">Contact</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</nav>
+		<!-- End Navigation -->
+
+		<!-- Start Landing Page Image -->
+		<div class="landing-mars">
+			<div class="home-wrap-mars">
+				<div class="home-inner-erd"></div>
+			</div>
+		</div>
+		<!-- End Landing Page Image -->
+
+		<!-- Start Landing Page Caption -->
+		<div class="caption text-center text-light text-uppercase">
+
+            <h1 class="font-weight-bold os-animation" data-animation="fadeInUp" data-delay=".6s">Employee Database Analysis</h1>
+            <h3 class="os-animation" data-animation="fadeInUp" data-delay=".8s">Modeled (ERD), engineered (CSV to PostgreSQL) </br>and analyzed the employee database of a</br> company from the period of 1980 - 1990.</h3>
+			<div>
+				<a href="#background" class="btn btn-outline-light btn-lg rounded-0 os-animation" data-animation="fadeInUp" data-delay="1.2s">Get Started</a>
+			</div>
+
+		</div>
+		<!-- End Landing Page Caption -->
+
+		<!-- Start Bouncing Down Arrow -->
+		<a href="#background" class="down-arrow text-center">
+			<div class="arrow d-none d-md-block">
+				<i class="fas fa-angle-down"></i>
+			</div>
+		</a>
+		<!-- End Bouncing Down Arrow -->
+
+	</div>
+	<!-- End Home Section -->
+
+
+	<!-- Start Features Section -->
+	<div id="background" class="offset">
+		<!-- Start Theme Heading -->
+		<div class="row text-center py-4 os-animation justify-content-center" data-animation="fadeInUp" >
+			<div class="col-11 col-md-10 col-lg-9">
+				<h1>Objective</h1>
+				<p class="lead">Inspect the employee databvase CSV files and sketch out an ERD of the tables (<a href="http://www.quickdatabasediagrams.com">http://www.quickdatabasediagrams.com</a>). Use the information to create a table schema for each of the CSV files. Specify data types, primary keys, foreign keys, and other constraints. Once the database is created, answer the following questions:</p>	
+				<p>
+					List the following details of each employee: employee number, last name, first name, gender, and salary.</br>
+					List employees who were hired in 1986.</br>
+					List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name, and start and end employment dates.</br>
+					List the department of each employee with the following information: employee number, last name, first name, and department name.</br>		
+					List all employees whose first name is "Hercules" and last names begin with "B."</br>
+					List all employees in the Sales department, including their employee number, last name, first name, and department name.</br>
+					List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.</br>
+					In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
+				</p>
+			</div>
+		</div>
+	</div>
+        <!-- End Theme Heading -->
+    
+    		<!-- Start Featured Projects -->
+
+	<div id="features" class="offset">
+        <div class="fixed">
+            <div class="row dark text-center py-4 os-animation justify-content-center">			
+                <div class="col-11 col-md-10 col-lg-9" data-animation="fadeInUp">
+                    <h3 class="heading-mars">Code</h3>
+                    <div class="heading-underline"></div>
+                </div>
+            </div> <!-- End Row Dark -->
+            <div class="fixed-wrap">
+                <div class="fixed-dark"></div>
+            </div>
+        </div>
+        <!-- End Fixed BG IMG Dark -->
+    </div>
+    <!-- End of Features Section -->
+
+
+
+    <div id="background" class="offset">
+            <!-- Start Theme Heading -->
+        <div class="row text-center py-4 os-animation justify-content-center" data-animation="fadeInUp">
+            <div class="col-11 col-md-10 col-lg-9">
+				<figure class="code-format">
+					<?prettify linenums=1?>
+					<pre class="prettyprint">
+'--Drop existing tables, putting the Primary Key tables at the bottom of the list'
+DROP TABLE IF EXISTS Titles;
+DROP TABLE IF EXISTS Salaries;
+DROP TABLE IF EXISTS Department_Manager;
+DROP TABLE IF EXISTS Department_Employee;
+DROP TABLE IF EXISTS Departments;
+DROP TABLE IF EXISTS Employees;
+
+CREATE TABLE Employees (
+	emp_no INTEGER   NOT NULL,
+	birth_date VARCHAR   NOT NULL,
+	first_name VARCHAR   NOT NULL,
+	last_name VARCHAR   NOT NULL,
+	gender VARCHAR   NOT NULL,
+	hire_date VARCHAR   NOT NULL,
+	CONSTRAINT pk_Employees PRIMARY KEY (
+		emp_no
+		)
+);
+
+CREATE TABLE Titles (
+	emp_no INT   NOT NULL,
+	title VARCHAR   NOT NULL,
+	from_date VARCHAR   NOT NULL,
+	to_date VARCHAR   NOT NULL
+);
+
+CREATE TABLE Salaries (
+	emp_no INT   NOT NULL,
+	salary INTEGER   NOT NULL,
+	from_date VARCHAR   NOT NULL,
+	to_date VARCHAR   NOT NULL
+);
+
+CREATE TABLE Department_Manager (
+	dept_no VARCHAR   NOT NULL,
+	emp_no INT   NOT NULL,
+	from_date VARCHAR   NOT NULL,
+	to_date VARCHAR   NOT NULL
+);
+
+CREATE TABLE Department_Employee (
+	emp_no INT   NOT NULL,
+	dept_no VARCHAR   NOT NULL,
+	from_date VARCHAR   NOT NULL,
+	to_date VARCHAR   NOT NULL
+);
+
+CREATE TABLE Departments (
+	dept_no VARCHAR   NOT NULL,
+	dept_name VARCHAR   NOT NULL,
+	CONSTRAINT pk_Departments PRIMARY KEY (
+		dept_no
+		)
+);
+
+'--COMMENT THESE OUT!!!!'
+
+'--ALTER TABLE Titles ADD CONSTRAINT fk_Titles_emp_no FOREIGN KEY(emp_no)'
+'REFERENCES Employees (emp_no);'
+
+'--ALTER TABLE Salaries ADD CONSTRAINT fk_Salaries_emp_no FOREIGN KEY(emp_no)'
+'--REFERENCES Employees (emp_no);'
+
+'--ALTER TABLE Department_Manager ADD CONSTRAINT fk_Department_Manager_dept_no FOREIGN KEY(dept_no)'
+'--REFERENCES Departments (dept_no);'
+
+'--ALTER TABLE Department_Manager ADD CONSTRAINT fk_Department_Manager_emp_no FOREIGN KEY(emp_no)'
+'--REFERENCES Employees (emp_no);'
+
+'--ALTER TABLE Department_Employee ADD CONSTRAINT fk_Department_Employee_emp_no FOREIGN KEY(emp_no)'
+'--REFERENCES Employees (emp_no);'
+
+'--ALTER TABLE Department_Employee ADD CONSTRAINT fk_Department_Employee_dept_no FOREIGN KEY(dept_no)'
+'--REFERENCES Departments (dept_no);'
+
+
+
+'--List the following details of each employee: employee number, last name, first name, gender, and salary'
+SELECT * FROM employees;
+
+SELECT emp.emp_no, emp.last_name, emp.first_name, emp.gender, sal.salary
+FROM Employees emp
+JOIN Salaries sal
+ON emp.emp_no = sal.emp_no;
+
+'--List employees who were hired in 1986.'
+
+SELECT last_name, first_name, hire_date
+FROM Employees
+WHERE (hire_date LIKE '%%/%%/1986');
+
+'--List the manager of each department with the following information: department number, department name, 
+--the managers employee number, last name, first name, and start and end employment dates.'
+
+SELECT mngr.dept_no, dept_name, mngr.emp_no, first_name, last_name, mngr.from_date, mngr.to_date
+FROM Department_Manager mngr
+LEFT JOIN Departments ON mngr.dept_no = Departments.dept_no
+LEFT JOIN Employees ON mngr.emp_no = Employees.emp_no;
+
+'--List the department of each employee with the following information: employee number, last name, first name, and department name.'
+
+SELECT emp.emp_no, last_name, first_name, dept_name
+FROM Employees emp
+LEFT JOIN Department_Employee dpt ON emp.emp_no = dpt.emp_no
+LEFT JOIN Departments ON dpt.dept_no = Departments.dept_no;
+
+'--List all employees whose first name is "Hercules" and last names begin with "B."'
+
+SELECT  first_name, last_name
+FROM Employees emp
+WHERE (first_name LIKE 'Hercules' AND last_name LIKE 'B%');
+
+'--List all employees in the Sales department, including their employee number, last name, first name, and department name.'
+'--***Similar to question 4, only include sales'
+
+SELECT emp.emp_no, last_name, first_name, dept_name
+FROM Employees emp
+LEFT JOIN Department_Employee dpt ON emp.emp_no = dpt.emp_no
+LEFT JOIN Departments ON dpt.dept_no = Departments.dept_no
+WHERE dept_name LIKE 'Sales';
+
+'--List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.'
+'--Similar to questions 4 and 6, add 'OR' in the conditional'
+
+SELECT emp.emp_no, last_name, first_name, dept_name
+FROM Employees emp
+LEFT JOIN Department_Employee dpt ON emp.emp_no = dpt.emp_no
+LEFT JOIN Departments ON dpt.dept_no = Departments.dept_no
+WHERE dept_name LIKE 'Sales' OR  dept_name LIKE 'Development';
+
+'--In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.'
+
+SELECT last_name, COUNT(last_name) AS "name_freq"
+FROM Employees
+GROUP BY last_name
+ORDER BY name_freq DESC;</pre>							
+            </div>
+        </div>
+    </div>
+		<!-- Start Featured Projects -->
+
+	<div id="features" class="offset">
+		<div class="fixed">
+			<div class="row dark text-light text-center">			
+				<div class="col-12 os-animation" data-animation="fadeInUp">
+					<h3 class="heading">Conclusion</h3>
+					<div class="heading-underline"></div>
+					<p class="lead">With the provided CSV files, a table schemata was modeled, creating the keys for the tables. Once the table schema was made, the data was engineered and loaded into the SQL table, and then analyzed to answer the questions on the data. To view more files from this project, please visit GitHub!</p>
+					<div class="col-10 col-lg-9 col-xl-8 text-center pt-5 os-animation" data-animation="fadeInUp">
+							<a href="https://github.com/nrdeering/Employee-Information-SQL" class="btn btn-secondary btn-sm" target="_blank">Visit GitHub</a>
+						</div>
+				</div>
+			</div> <!-- End Row Dark -->
+		</div>
+		<!-- End Fixed BG IMG Dark -->
+	</div>
+	<!-- End of Features Section -->
+
+	<!-- Start Portfolio Section -->
+	<div id="portfolio" class="offset">
+
+		<div class="container-fluid px-0">
+			<div class="row justify-content-center py-5">
+
+				<div class="col-12 mt-5 os-animation" data-animation="fadeInUp">
+						<h3 class="heading">Project Portfolio</h3>
+						<div class="heading-underline"></div>
+					</div>
+
+					<div class="col-sm-6 col-md-3 p-0 os-animation" data-animation="bounceInLeft" data-delay=".2s">
+						<div class="portfolio-item overflow-hidden">
+							<a href="img/portfolio/12.jpg" data-lightbox="example-set" data-title="Mission to Mars">
+								<a href="mars.html"><img src="img/portfolio/12.jpg" alt="" class="example-image w-100"></a>
+							</a>
+						</div>
+					</div>
+	
+					<div class="col-sm-6 col-md-3 p-0 os-animation" data-animation="bounceInLeft">
+						<div class="portfolio-item overflow-hidden">
+							<a href="img/computers23.jpeg" data-lightbox="example-set" data-title="My Portfolio Image Description">
+								<a href="erd.html"><img src="img/computers23.jpeg" alt="" class="example-image w-100"></a>							
+							</a>
+						</div>
+					</div>
+	
+					<div class="col-sm-6 col-md-3 p-0 os-animation" data-animation="bounceInRight">
+						<div class="portfolio-item overflow-hidden">
+							<a href="img/portfolio/14.jpg" data-lightbox="example-set" data-title="My Portfolio Image Description">
+								<a href="https://github.com/nrdeering/Python-Matplotlib" target="_blank"><img src="img/portfolio/14.jpg" alt="" class="example-image w-100"></a>
+							</a>
+						</div>
+					</div>
+	
+					<div class="col-sm-6 col-md-3 p-0 os-animation" data-animation="bounceInRight" data-delay=".2s">
+						<div class="portfolio-item overflow-hidden">
+							<a href="img/portfolio/15.jpg" data-lightbox="example-set" data-title="My Portfolio Image Description">
+								<a href="citibike.html"><img src="img/portfolio/15.jpg" alt="" class="example-image w-100"></a>
+							</a>
+						</div>
+					</div>
+	
+					<div class="col-sm-6 col-md-3 p-0 os-animation" data-animation="bounceInLeft" data-delay=".2s">
+						<div class="portfolio-item overflow-hidden">
+							<a href="img/portfolio/16.jpg" data-lightbox="example-set" data-title="My Portfolio Image Description">
+								<a href="https://github.com/nrdeering/Visual-Basic-Stocks" target="_blank"><img src="img/portfolio/16.jpg" alt="" class="example-image w-100"></a>
+							</a>
+						</div>
+					</div>
+	
+					<div class="col-sm-6 col-md-3 p-0 os-animation" data-animation="bounceInLeft">
+						<div class="portfolio-item overflow-hidden">
+							<a href="img/portfolio/17.jpg" data-lightbox="example-set" data-title="My Portfolio Image Description">
+								<a href="https://github.com/nrdeering/Crime-Data" target="_blank"><img src="img/portfolio/17.jpg" alt="" class="example-image w-100"></a>
+							</a>
+						</div>
+					</div>
+	
+					<div class="col-sm-6 col-md-3 p-0 os-animation" data-animation="bounceInRight">
+						<div class="portfolio-item overflow-hidden">
+							<a href="img/portfolio/18.jpg" data-lightbox="example-set" data-title="My Portfolio Image Description">
+								<a href="https://github.com/nrdeering/ETL-Youtube" target="_blank"><img src="img/portfolio/18.jpg" alt="" class="example-image w-100"></a>
+							</a>
+						</div>
+					</div>
+	
+					<div class="col-sm-6 col-md-3 p-0 os-animation" data-animation="bounceInRight" data-delay=".2s">
+						<div class="portfolio-item overflow-hidden">
+							<a href="img/portfolio/19.jpg" data-lightbox="example-set" data-title="My Portfolio Image Description">
+								<a href="https://github.com/Alexis-Summey/Read_Between_the_Wines" target="_blank"><img src="img/portfolio/19.jpg" alt="" class="example-image w-100"></a>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-10 col-lg-9 col-xl-8 text-center pt-5 os-animation" data-animation="fadeInUp">
+						<p class="lead">To see more projects, please visit GitHub and browse the different repositories.</p>
+						<a href="https://github.com/nrdeering" class="btn btn-secondary btn-sm" target="_blank">Visit GitHub</a>
+					</div>
+
+			</div> <!-- End Row -->
+		</div> <!-- End Container -->
+
+	</div>
+	<!-- End of Portfolio Section -->
+
+	<!-- Start Contact Section -->
+	<div id="contact" class="offset">
+
+		<div class="container-fluid footer px-0">
+			<div class="row outer">
+
+				<div class="container">
+					<div class="row py-3">
+
+						<div class="col-md-5 px-0 pr-md-3">
+							<strong>Location</strong>
+							<p>Charlotte, NC</p>
+							<strong>Contact Information</strong>
+							<p>(704)608-9213<br>nrdeering@gmail.com</p>
+							<ul class="social pt-3">
+									<li><a href="https://www.linkedin.com/in/nrdeering/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+									<li><a href="https://github.com/nrdeering" target="_blank"><i class="fab fa-github"></i></a></li>
+							</ul>
+						</div> <!-- End Column -->
+					</div> <!-- End Row -->
+				</div> <!-- End Container -->
+			</div> <!-- End Row Outer -->
+		</div> <!-- End Container Fluid -->
+		
+	</div>
+	<!-- End Contact Section -->
+
+
+	<!-- Top Scroll -->
+	<a href="#home" class="top-scroll">
+		<i class="fa fa-angle-up"></i>
+	</a>
+	<!-- End of Top Scroll -->
+
+
+	<!-- Script Source Files -->
+
+
+	<!-- Plugins.js -->
+	<script src="js/plugins.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+	<script src="https://use.fontawesome.com/releases/v5.11.2/js/all.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+	
+	<!-- End of Script Source Files -->
+
+</body>
+</html>
