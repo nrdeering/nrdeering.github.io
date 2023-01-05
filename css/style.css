@@ -258,7 +258,6 @@ h1.heading_landing {
    font-size: 1.9rem;
    text-align: center;
    margin-bottom: 1.9rem;
-   color: rgb(9, 49, 2);
 }
 
 h3.heading_landing {
@@ -515,7 +514,7 @@ a.top-scroll:hover {
 
 
 /* Devices under 992px (lg) */
-@media (max-width: 991.98px) {
+@media screen and (max-width: 991.98px) {
    .caption h1 {
       font-size: 3.5rem;
       letter-spacing: .2rem;
@@ -540,10 +539,20 @@ a.top-scroll:hover {
       padding: 15px;
       align-content: center;
    }
+   .caption-landing {
+      position: absolute;
+      padding: 30px;
+      z-index: 1;
+      top: 15%;
+      width: 100%;
+      max-width: 100%;
+      align-items: center;
+      justify-content: center;
+      }
 }
 
 /* Devices under 768px (md) */
-@media (max-width: 767.98px) {
+@media screen and  (max-width: 767.98px) {
    .caption h1 {
       font-size: 2.7rem;
       letter-spacing: .15rem;
@@ -583,10 +592,20 @@ a.top-scroll:hover {
       padding: 15px;
       align-content: center;
    }  
+   .caption-landing {
+      position: absolute;
+      padding: 30px;
+      z-index: 1;
+      top: 15%;
+      width: 100%;
+      max-width: 100%;
+      align-items: center;
+      justify-content: center;
+      }
 }
 
 /* Devices under 576px (sm) */
-@media (max-width: 575.98px) {
+@media screen and (max-width: 575.98px) {
    .caption h1 {
       font-size: 1.9rem;
       letter-spacing: .1rem;
@@ -626,5 +645,15 @@ a.top-scroll:hover {
    }
    .footer {
       background: url('../img/computers61.jpg') no-repeat;
+   }
+   .caption-landing {
+      position: absolute;
+      padding: 30px;
+      z-index: 1;
+      top: 15%;
+      width: 100%;
+      max-width: 100%;
+      align-items: center;
+      justify-content: center;
    }
 }
