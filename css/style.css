@@ -81,6 +81,12 @@ button, a, a.btn,
    display: table;
    z-index: -1;
 }
+
+.home {
+   display: flex;
+   flex-wrap: wrap;
+ }
+
 .home-wrap {
    clip: rect(0, auto, auto, 0);
    position: absolute;
@@ -173,8 +179,9 @@ button, a, a.btn,
    width: 100%;
    max-width: 100%;
 }
-.caption-landing {
-   position: absolute;
+/* .caption-landing {
+   position:absolute;
+   overflow:hidden;
    padding: 30px;
    z-index: 1;
    top: 15%;
@@ -183,7 +190,7 @@ button, a, a.btn,
    align-items: center;
    justify-content: center;
    display: inline-flex;
-}
+} */
 .caption h1 {
    font-size: 4.5rem;
    letter-spacing: .3rem;
@@ -217,6 +224,12 @@ button, a, a.btn,
 .down-arrow .svg-inline--fa:hover {
    opacity: .8;
 }
+
+/* Create four equal columns */
+.column {
+   flex: 50%;
+   padding: 20px;
+ }
 
 /*============= FEATURES SECTION =============*/
 
@@ -514,7 +527,7 @@ a.top-scroll:hover {
 
 
 /* Devices under 992px (lg) */
-@media screen and (max-width: 991.98px) {
+@media (max-width: 991.98px) {
    .caption h1 {
       font-size: 3.5rem;
       letter-spacing: .2rem;
@@ -539,20 +552,14 @@ a.top-scroll:hover {
       padding: 15px;
       align-content: center;
    }
-   .caption-landing {
-      position: absolute;
-      padding: 30px;
-      z-index: 1;
-      top: 15%;
-      width: 100%;
-      max-width: 100%;
-      align-items: center;
-      justify-content: center;
-      }
+
+      .home {
+         flex-direction: column;
+       }
 }
 
 /* Devices under 768px (md) */
-@media screen and  (max-width: 767.98px) {
+@media (max-width: 767.98px) {
    .caption h1 {
       font-size: 2.7rem;
       letter-spacing: .15rem;
@@ -592,7 +599,7 @@ a.top-scroll:hover {
       padding: 15px;
       align-content: center;
    }  
-   .caption-landing {
+   /* .caption-landing {
       position: absolute;
       padding: 30px;
       z-index: 1;
@@ -601,11 +608,11 @@ a.top-scroll:hover {
       max-width: 100%;
       align-items: center;
       justify-content: center;
-      }
+      } */
 }
 
 /* Devices under 576px (sm) */
-@media screen and (max-width: 575.98px) {
+@media (max-width: 575.98px) {
    .caption h1 {
       font-size: 1.9rem;
       letter-spacing: .1rem;
@@ -646,7 +653,7 @@ a.top-scroll:hover {
    .footer {
       background: url('../img/computers61.jpg') no-repeat;
    }
-   .caption-landing {
+   /* .caption-landing {
       position: absolute;
       padding: 30px;
       z-index: 1;
@@ -655,5 +662,8 @@ a.top-scroll:hover {
       max-width: 100%;
       align-items: center;
       justify-content: center;
-   }
+   } */
+   .home {
+      flex-direction: column;
+    }
 }
