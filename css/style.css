@@ -85,7 +85,7 @@ button, a, a.btn,
 .home {
    display: flex;
    flex-wrap: wrap;
-   background-image: url('../img/img2.jpg');
+   background-image: url('../img/image9-1.png');
    align-items:center;
    text-align: center;
    background-size:100%;
@@ -102,7 +102,7 @@ button, a, a.btn,
    left: 0;
 }
 .home-inner {
-   background-image: url('../img/img2.jpg');
+   background-image: url('../img/image9-1.png');
    position: fixed;
    height: 100%;
    width: 100%;
